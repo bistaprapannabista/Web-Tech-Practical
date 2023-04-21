@@ -1,0 +1,15 @@
+#head{
+    text-transform: uppercase;
+}
+
+.para{
+    border: 2px solid black;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

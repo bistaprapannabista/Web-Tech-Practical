@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+.align-between{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+body{
+    background-color:rgb(204, 203, 203);
+}    
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a button{
+    background-color: red;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    border-radius: 10px;  
+    box-shadow: 10px 10px;
+    margin-bottom: 20px;  
+}
+input{
+width:200px;
+}
+
+th , td{
+padding:10px;
+text-align: center;
+}
+table{
+border-collapse: collapse;
+}
+
+button{
+border:none;
+background-color:#33b249;
+padding: 5px;
+border-radius: 5px;
+color:white;
+}
+
+button:hover{
+background-color:#5adbb5;
+cursor: pointer;
+}

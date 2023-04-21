@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime or Composite</title>
+    <style>
+      .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        border: none;
+        padding: 10px;
+        background-color: grey;
+      }
+
+      button:hover {
+        color: white;
+        cursor: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <label for="input">Number:</label>
+        <input type="number" id="input" />
+        <br>
+        <button onclick="check()">Check</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        function check(){
+            let val = Number(document.getElementById("input").value);
+            let output = document.getElementById("output");
+            isPrime(val)?output.innerHTML="Prime":output.innerHTML="Composite";
+        }
+
+        function isPrime(x){
+            for(let i=2;i<x;i++){
+                if(x%i===0) return false;
+            }
+        return true;
+        }
+    </script>
+  </body>
+</html>

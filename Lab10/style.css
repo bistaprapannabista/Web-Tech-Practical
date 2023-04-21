@@ -1,0 +1,18 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border:none;
+    padding: 10px;
+    background-color: grey;
+}
+
+button:hover{
+    color:white;
+    cursor: none;
+}

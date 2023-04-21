@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <div class="container">
+    <form action="handelData.php" method="post">
+        <h3 style="margin-bottom: 20px;">ASCOL Student Records</h3>
+        <div class="card">
+        <label for="roll_no">Roll No:</label>
+        <input type="text" name="roll_no" required>
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+        <button style="margin-top: 5px;">Submit</button>
+        </div>
+    </form>
+    <a href="/crud/dataView.php"><button style="background-color:#4267B2">View Data</button></a>
+</div>
+</body>
+</html>
